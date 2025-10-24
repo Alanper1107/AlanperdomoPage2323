@@ -1,4 +1,5 @@
 
+
 /* ===== PRELOADER / ANIMACIÓN DE INICIO ===== */
 
 #preloader {
@@ -155,7 +156,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .pizzas{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #e2c39c;
+  color: #422706;
 }
 #titulo_tentacion{
   color: rgb(213, 145, 49);
@@ -189,11 +190,31 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: left;
   margin-bottom: 10px;
   
+  
+}
+
+#menuDestacadoBtn:hover, #menuCompletoBtn:hover{
+  transform: scale(1.2,1.2);
 }
 #menuDestacadoBtn.active, #menuCompletoBtn.active {
   background: rgb(133, 90, 29);
+  transform: scale(1.5,1.5);
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-150%);  /* Empieza arriba, fuera de la pantalla */
+    opacity: 0;                     /* Invisible */
+  }
+  to {
+    transform: translateY(0);       /* Termina en su posición normal */
+    opacity: 1;                     /* Completamente visible */
+  }
+}
+
+.site-header {
+  animation: slideDown 4s ease-out;  /* Aplica la animación por 0.5 segundos */
+}
 
 .hero-title{ font-size:1.3rem; margin-bottom:6px; font-weight:800; }
 .hero-sub{ margin-bottom:10px; opacity:0.95; }
@@ -244,7 +265,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     color: rgb(213, 145, 49);
     border-bottom: solid 1px rgb(246, 189, 77);
-    
+    transform: scale(1.3,1.3);
 }   
 #menu_arriba{
   color: rgb(213, 145, 49);
@@ -252,7 +273,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #menu_arriba:hover{
    color: rgb(250, 182, 242);
     border-bottom: solid 1px rgb(250, 182, 242);
-    
+    transform: scale(1.3,1.3);
 }
 #ubicacion_arriba{
   color:rgb(213, 145, 49);
@@ -261,6 +282,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #ubicacion_arriba:hover{
     color:  rgba(74, 181, 169, 0.4) ;
     border-bottom: solid 1px rgba(74, 181, 169, 0.4);
+    transform: scale(1.3,1.3);
 }
 
 #contacto_arriba{
@@ -269,6 +291,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #contacto_arriba:hover{
     color:rgb(250, 250, 125);
     border-bottom: solid 1px rgb(241, 241, 167);
+    transform: scale(1.3,1.3);
     
     
 }
@@ -434,4 +457,5 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   .menu-item-img {width:140px; height:100px; }}
 
 
+ 
  
